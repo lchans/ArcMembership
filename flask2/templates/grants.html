@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+   <div class="container">
+		<div class="row">
+			<div class="col-md-3"> 
+				<form action="/generate">
+					
+					<div class="form-group">
+					<label>Club</label>
+					<input type="text" class="form-control" placeholder="Club"
+					value="{{ grant['society_name'] }}">
+					</div>
+
+					<div class="form-group">
+					<label>Submission ID</label>
+					<input type="text" class="form-control" placeholder="Submission ID"
+					value="{{ grant['submission_id'] }}">
+					</div>
+
+					<div class="form-group">
+					<label>Contact Name</label>
+					<input type="text" class="form-control" placeholder="Contact Name"
+					value="{{ grant['contact_name'] }}">
+					</div>
+
+					<div class="form-group">
+					<label>Contact Email</label>
+					<input type="text" class="form-control" placeholder="Contact Email"
+					value="{{ grant['contact_email'] }}">
+					</div>
+
+					<div class="form-group">
+					<label>Event Description</label>
+					<input type="text" class="form-control" placeholder="Event Description"
+					value="{{ grant['event_description'] }}">
+					</div>
+
+					<div class="form-group">
+					<label>Event Date</label>
+					<input type="text" class="form-control" placeholder="Event Date"
+					value="{{ grant['event_date'] }}">
+					</div>
+
+					<div class="form-group">
+					<label>Arc Attendance</label>
+					<input type="text" class="form-control" placeholder="Arc Attendance"
+					value="{{ grant['arc_attendance'] }}">
+					</div>
+
+					<div class="form-group">
+					<label>Total Attendance</label>
+					<input type="text" class="form-control" placeholder="Total Attendance"
+					value="{{ grant['total_attendance'] }}">
+					</div>
+
+					<div class="form-group">
+					<label>Expenditure</label>
+					<input type="text" class="form-control" placeholder="Expenditure"
+					value="{{ grant['total_expenditure'] }}">
+					</div>
+
+					<div class="form-group">
+					<label>Income</label>
+					<input type="text" class="form-control" placeholder="Income"
+					value="{{ grant['total_income'] }}">
+					</div>
+
+					<div class="form-group">
+					<label>GST</label>
+					<input type="text" class="form-control" placeholder="GST"
+					value="{{ grant['total_gst'] }}">
+					</div>
+
+					<div class="form-group">
+						<label>Grant Approved By:</label><br>
+						<input type="radio"> Lavender Chan<br>
+						<input type="radio"> Michael Do<br>
+						<input type="radio"> Dom Foffani<br>
+					</div>
+
+					<div class="form-group">
+						<label>Receipts Check?</label><br>
+						<input type="checkbox"> Yes
+						<input type="checkbox"> No<br>
+					</div>
+
+
+					<div class="form-group">
+						<label>Penalties</label><br>
+						<input type="checkbox"> Arc on Marketing<br>
+						<input type="checkbox"> Arc at Event<br>
+						<input type="checkbox"> Attendance List<br>
+					</div>
+
+					<div class="form-group">
+						<label>Warnings</label><br>
+						<input type="checkbox"> Arc on Marketing<br>
+						<input type="checkbox"> Attendance List<br>
+						<input type="checkbox"> Alcohol Policy<br>
+						<input type="checkbox"> Lateness<br>
+						<input type="checkbox"> Arc Discount<br>
+						<input type="checkbox"> Arc on Marketing<br>
+						<input type="checkbox"> Arc at Event<br>
+					</div>
+				</form> 
+			</div> 			
+			<div class="col-md-5 col-md-offset-1"> 
+				<h3> Event Date</h3> 
+				{{ grant['event_date'] }}
+				<h3> Date Submitted </h3> 
+				{{ grant['submission_date'] }}
+				<hr>
+				<h3> Event Photo</h3> 
+				<a href="http://orgsync.com{{grant['activity_photo']}}" 
+				class="btn btn-sm btn-success">Link to Event Photo</a>
+				<p><p>
+				<img width="500"src="http://orgsync.com{{grant['activity_photo']}} ">
+				<h3> Attendance List</h3> 
+				<a href="http://orgsync.com{{grant['attendance_list']}}" 
+				class="btn btn-sm btn-success">Link to Attendance List</a><p>
+				<p><p>
+				<img width="500"src="http://orgsync.com{{grant['attendance_list']}} ">
+				<h3> Arc Logo in Marketing</h3> 
+				<a href="http://orgsync.com{{grant['event_marketing']}}" 
+				class="btn btn-sm btn-success">Link to Event Marketing</a>
+				<p><p>
+				<img width="500"src="http://orgsync.com{{grant['event_marketing']}} ">
+				<hr>
+				<h3> Receipts and Invoice</h3> 
+				<a href="http://orgsync.com{{grant['event_receipt']}}" 
+				class="btn btn-sm btn-success">Link to Event Receipt</a><p>
+				<img width="500"src="http://orgsync.com{{grant['event_receipt']}} ">
+				<h3> Budget</h3> 
+				<a href="http://orgsync.com{{grant['event_budget']}}" 
+				class="btn btn-sm btn-success">Link to Event Budget</a><p>
+				<img width="500"src="http://orgsync.com{{grant['event_budget']}} ">
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+   <link href="/static/grants.css" rel="stylesheet">
+  </head>
+  <body>
+  	<div class="container">
+    <div class="row">
+      <h1>Parameters given:</h1> 
+        {% for row in params %}
+          {{row}}
+        {% endfor %}
+      <h1>Sample CSV File: </h1> 
+        {% for row in data %}
+          {{ row }}
+        {% endfor %}
+	 </div>
+</div>
+  </body>
+</html>
