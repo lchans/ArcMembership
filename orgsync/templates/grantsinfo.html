@@ -1,0 +1,78 @@
+	
+	<!DOCTYPE html>
+<html ng-app="port">
+    
+<head>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/css/dashboard.css" rel="stylesheet">
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.4/angular.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="static/js/app.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link href="static/css/custom.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+</head>
+    
+<body ng-controller="viewController as view">
+
+	<navigation></navigation>
+
+	<div id="wrapper">
+    <div class="col-md-6">
+        <div width="10%" class="row"> 
+            <div class="rounded"> 
+                Copy and paste me into the excel spreadsheet!
+                {{populate[1615870]}},
+                {{populate[1615884]}},
+                {{populate[1615868]}},
+                {{populate[1615891]}},
+                {{populate[1615889]}}, 
+                {{populate[1615890]}},
+                {{populate[1615872]}}, 
+                {{populate[1615873]}},
+                <input type="text"></input>
+            </div>
+        </div>
+        <div class="row"> 
+            <div class="rounded">
+                <!-- Activity Name --> 
+                <b>Activity Name</b>
+                {{ populate[1615870] }} <br>
+                <!-- Detailed description of activity -->
+                <b>Detailed description of activity </b>
+                {{ populate[1615871] }} <br>
+                <!-- How many Arc members attended your event? -->
+                <b>How many Arc members attended your event?</b>
+                {{ populate[1615872] }} <br>
+                <!-- How many Non-Arc members attended your event? --> 
+                <b> How many Non-Arc members attended your event?</b>
+                {{ populate[1615873] }} <br>
+                <! -- Total Activity Expenditure --> 
+                <b>Total Activity Expenditure </b>
+                {{ populate[1615889] }} <br>
+                
+                
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div width="10%" class="row"> 
+            <div class="rounded"> 
+                <h3>{{profile['name']}}</h3>
+                <h4>{{profile['short_name']}}</h4>
+                {{profile['club_type']}}<br>
+                {{profile['club_level']}}
+                {{profile['club_exec']}}
+                {{profile['club_members']}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="rounded"> 
+                <img style="max-width:100%;
+max-height:100%;" src="{{ populate[1615875]['url'] }}">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

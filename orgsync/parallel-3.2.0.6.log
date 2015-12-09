@@ -1,0 +1,1 @@
+atisfiable :: Formula ts -> BoolZ

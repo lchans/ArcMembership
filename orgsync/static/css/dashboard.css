@@ -1,0 +1,25 @@
+.panel { 
+    padding: 50px; 
+    color: #FFF;
+    line-height: 20px;
+}
+
+.panel-1 { 
+    background-color: #e74c3c;
+}
+
+.panel-2 { 
+    background-color: #2ecc71;
+}
+
+.panel-3 { 
+    
+    background-color: #f39c12;
+    
+}
+
+.span-large { 
+    width: 100px; 
+    display:block;
+    font-size: 2em;
+}

@@ -1,0 +1,57 @@
+
+@app.route('/bank')
+def bank():
+
+	#d = Club.all()
+	#query = Club.all(keys_only=True)
+	#entries = query.fetch(1000)
+	#db.delete(entries)
+	#for b in d: 
+	#	print b.name
+	return render_template("bank.html")
+
+def generate_csv(grant_values): 
+	csv = [] 
+	csv.append(date.today().strftime("%B"))
+	csv.append(date.today().strftime("%d/%m/%Y"))
+	csv.append("Lavender")
+	csv.append(grant_values['submission_id'])
+	csv.append(grant_values['society_name'])
+	csv.append("Yes")
+	csv.append("0")
+	csv.append("0")
+	csv.append(grant_values['event_description'])
+	return csv 
+
+
+@app.route('/viewbank', methods= ['POST'])
+def bankfile():
+	bank = request.files['bankfile']
+	print bank
+	return render_template("bank.html")
+
+@app.route('/newsletter')
+def newsletter():
+	return render_template("newsletter.html")
+
+@app.route('/volunteer')
+def volunteer():
+	return render_template("volunteer.html")
+
+	#req = urllib2.Request('https://orgsync.com/78400/')
+	##req.add_header('Referer', 'http://www.python.org/')
+	#r = urllib2.urlopen(req)
+	#print r.info()
+
+
+	##cj = cookielib.CookieJar()
+	#opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cj))
+	#formdata = {'os_session' : '5147da59f85699ed509360617b6cf5e8'}
+	#data_encoded = urllib.urlencode(formdata)
+	#response = opener.open("https://orgsync.com/78400/") #data_encoded)
+#	cj = http.cookiejar.CookieJar()#
+#	opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(cj))
+#	request = urllib.request.Request('https://orgsync.com/78400/forms/127816/submissions/14225854?ref=%2F78400%2Fforms%2F127816%2Fsubmissions%3F_pjax%3D%2523pjax-container')
+#	response = opener.open(request)
+#	print("Before")
+	#print(cj._cookies)

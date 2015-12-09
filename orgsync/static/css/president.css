@@ -1,0 +1,157 @@
+html, body {
+    min-height: 100%;
+	font-family: 'Bebas';
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 1.5;
+	letter-spacing: 1;	
+}
+
+@font-face {
+    font-family: 'Bebas'; /*a name to be used later*/
+    src: url('../fonts/BebasNeue Light.otf'); /*URL to font*/
+	font-style: light;
+}
+
+@font-face {
+    font-family: 'Bebas'; /*a name to be used later*/
+    src: url('../fonts/BebasNeue Book.otf'); /*URL to font*/
+	font-weight:600;
+}
+
+@font-face {
+    font-family: 'Bebas'; /*a name to be used later*/
+    src: url('../fonts/BebasNeue Bold.otf'); /*URL to font*/
+	font-weight: bold;
+}
+
+
+@font-face {
+    font-family: 'Voyage'; /*a name to be used later*/
+    src: url('../fonts/Voyage Regular.otf'); /*URL to font*/
+}
+
+.divider { 
+	padding: 3%;
+}
+
+h9 { 
+	text-align: center; 
+	font-size: 40px;
+	font-weight:bold;
+}
+
+h7 { 
+	font-family: 'Voyage';
+	font-size: 200;
+	line-height: 0.6;
+	
+}
+
+h8 { 
+	font-weight: bold; 
+	font-size: 40px;
+	color: #FFF;
+}
+
+
+h9 { 
+	font-weight: bold; 
+	font-size: 30px;
+	color: #000;
+}
+
+
+h10 { 
+	font-weight: bold; 
+	font-size: 30px;
+	color: #000;
+}
+
+h11 { 
+	font-weight: bold; 
+	font-size: 40px;
+	color: #000;
+}
+
+.btn { 
+	font-weight: bold;	
+}
+
+
+
+#anchor { 
+	position:relative;
+	top: 60%;
+}
+
+
+#top { 
+	background: url(../images/moi.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%; 
+	height: 100%;
+	color: #FFF;
+	font-size: 24px;
+	padding: 20px;
+
+}
+
+#top-middle { 
+	background-color: #FFFFFF;
+	background-size: cover;
+    background-repeat: no-repeat;
+	background-size: auto 100%;
+	width: 100%; 
+	color: #777777;
+	font-size: 18px;
+	font-weight:600;
+	padding: 5%;
+	display: inline-block;
+}
+
+#middle { 
+	background-color: #E74C3C;
+	background-size: cover;
+    background-repeat: no-repeat;
+	background-size: auto 100%;
+	width: 100%; 
+	color: #FFF;
+	font-size: 18px;
+	font-weight:600;
+	padding: 5%;
+	display: inline-block;
+}
+
+#bottom-middle { 
+	background-color: #FFFFFF;
+	background-size: cover;
+    background-repeat: no-repeat;
+	width: 100%; 
+	color: #777777;
+	font-size: 14px;
+	font-weight:600;
+	padding: 5%;
+	display: inline-block;
+}
+
+
+#bottom { 
+	background: url("../images/background.jpg");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%; 
+	height: 80%;
+	padding-top: 15%;
+	color: #FFF;
+	font-weight:600;
+	display: inline-block;
+	
+}
+
+
